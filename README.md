@@ -126,6 +126,3 @@ I will make some custom icons and logos for the fun of it.
 Also hi cally ♡ our future house will have a SICK network and SICK rack (electricity bills and noise issues will be addressed later).
 
 This project and the ideas of it will grow alongside the homelab.
-
-```
-```
