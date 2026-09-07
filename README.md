@@ -145,7 +145,7 @@ Configuration examples should be sanitized before being added to the repository.
 ## Status
 
 **Active and continuously evolving**
-I will make some custom icons and logos for the fun of it
+I will make some custom icons and logos for the fun of it  
 Also hi cally ♡
 
 This project (and the ideas) will grow alongside the homelab.
