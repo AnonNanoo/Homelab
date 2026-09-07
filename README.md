@@ -130,7 +130,7 @@ homelab/
 This is a learning environment rather than a production datacenter.
 
 Things will be changed, tested, broken, rebuilt, optimized and occasionally set on fire metaphorically. 
-> I will try not to make the setup combust into fire non-metaphorically :)
+> I will try not to make the setup combust into flames non-metaphorically :)
 
 The important part is understanding **why** something works, **why** it breaks and **how** to fix it.
 
@@ -144,8 +144,8 @@ Configuration examples should be sanitized before being added to the repository.
 
 ## Status
 
-**Active and continuously evolving**
+**Active and continuously evolving**  
 I will make some custom icons and logos for the fun of it  
-Also hi cally ♡
+Also hi cally ♡ our future house will have a SICK network and SICK rack (electricity bills and noise issues will be addressed later).
 
 This project (and the ideas) will grow alongside the homelab.
