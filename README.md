@@ -23,7 +23,11 @@ The setup will likely change from time to time (upgrades, downgrades, location c
 
 ## Current Topology
 
-The network is to be built around a **Ubiquiti UniFi Dream Machine Pro** and a **Cisco Catalyst 3750-X**, with 1 GbE and 10 GbE connectivity between servers, clients and storage.
+The network is being built around a Ubiquiti UniFi Dream Machine Pro, an Arista DCS-7050SX-64 and a Cisco Catalyst 3750-X, each serving a different purpose.
+
+The UDM Pro handles the internet gateway and firewalling, while the Arista provides high-speed 10 GbE switching. The Cisco provides 1 GbE connectivity and another platform for learning and experimenting with Layer 2 / Layer 3 networking.
+
+The network will eventually connect servers, storage, clients, wireless access points and IoT devices using a combination of 1 GbE, 10 GbE and VLANs.
 
 > **Live UniFi topology screenshot coming soon.**
 
@@ -42,6 +46,7 @@ The goal is to eventually have a single interface for monitoring and interacting
 * Spring Boot + Kotlin
 * Gradle
 * Docker / Docker Compose
+ * Harbor
 
 The platform is intended to become a practical project for learning software development alongside networking, infrastructure and systems administration.
 
