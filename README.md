@@ -33,7 +33,7 @@ Because the Cisco switch is third-party equipment, the UniFi topology may not re
 
 Alongside the physical infrastructure, I'm building a custom management platform for the homelab.
 
-The goal is to eventually have a single interface for monitoring and interacting with the infrastructure — from network equipment and servers to storage, UPS systems, sensors and self-hosted services.
+The goal is to eventually have a single interface for monitoring and interacting with the infrastructure, from network equipment and servers to storage, UPS systems, sensors and self-hosted services.
 
 **Planned stack:**
 
@@ -51,17 +51,59 @@ More details can be found in the [software documentation](docs/software.md).
 
 The current and planned setup includes:
 
-* Ubiquiti UniFi Dream Machine Pro
-* Cisco Catalyst 3750-X
-* Cisco C3KX-NM-10G
-* HPE ProLiant DL180 Gen9
-* Synology RS810+
-* Raspberry Pi
-* ESP32 microcontrollers
-* 1 GbE / 10 GbE networking
-* UPS / power protection
-* Various sensors and IoT hardware
+> [!NOTE]
+> **NEW ADDITION:**  
+> Arista DCS-7050SX-64 -  1.28 Terabits per second switch  
+> I actually did need an SFP+ switch  
+> (maybe not this old and big)
 
+* Arista DCS-7050SX-64
+  * 10 years old
+  * Full SFP port switch
+  * 48 x 10GbE SFP+ ports
+  * 4 x 40GbE QSFP+ ports (I cant afford this one + only my server could handle that speed, but its a cool addition)
+* Ubiquiti UniFi Dream Machine Pro
+  * Modern compared to most of the rest
+  * Main internet gateway, firewall and UniFi controller
+  * Likely to be the more user-friendly side of network
+* Cisco Catalyst 3750-X
+  * ~16 years old (vintage networking hardware, but it suffices)
+  * Layer 2 / Layer 3 switching and routing
+  * 24 x 1GbE RJ45 ports
+  * No SFP+ ports by itself
+* Cisco C3KX-NM-10G
+  * Network module for the Catalyst 3750-X
+  * 2 × 10GbE SFP+ (Only TWO, thus -> arista switch)
+  * 2 × 1GbE SFP
+* HPE ProLiant DL180 Gen9
+  * ~12 years old
+  * Enterprise 2U server
+  * iLO remote management
+  * Currently used for experimentation
+  * Has 10GbE connectivity (Thanks to cheap NICs)
+* Synology RS810+
+  * Old 1U rackmount NAS
+  * 4-bay storage system
+  * Currently provides 16 TB active storage with another spare 16 TB
+  * 1 GbE sadly
+* Raspberry Pi
+  * Planned
+  * Intended for management, monitoring, console access and various small services
+* ESP32 microcontrollers
+  * Used for sensors and environmental monitoring
+  * Cheap enough to deploy basically anywhere
+* 1 GbE / 10 GbE networking
+  * 1 GbE for peripherals
+  * 10 GbE SFP+ for servers and my pc (its local anyway)
+  * Multimode OM3 fibre and 10G-SR optics
+* UPS / power protection
+  * Maybe
+* Various sensors and IoT hardware
+  * Temperature and other telemetry
+
+> [!NOTE]
+> Old hardware doesn't mean useless hardware
+    
 See the [hardware documentation](docs/hardware.md) for more details.
 
 ## Documentation
