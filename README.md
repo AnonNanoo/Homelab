@@ -103,12 +103,9 @@ The current and planned setup includes:
 
 > [!NOTE]
 > Old hardware doesn't mean useless hardware
-    
-See the [hardware documentation](docs/hardware.md) for more details.
 
 ## Documentation
 
-* [Hardware](docs/hardware.md)
 * [Software](docs/software.md)
 * [Networking](docs/networking.md)
 * [Infrastructure](docs/infrastructure.md)
